@@ -29,7 +29,7 @@
 
         <ul class="nav justify-content-end">
           <li class="nav-item">
-            <a class="nav-link" href="#">My Work</a>
+            <a class="nav-link" href="#my-work">My Work</a>
           </li>
             <li class="nav-item">
             <a class="nav-link no-padd-m" href="#">My Story</a>
@@ -52,6 +52,7 @@
 <br>
 
 <div class="container">
+
     <div class="row intro">
         <div class="col-sm-8">
             <h1 class="">  <!--- display-4 removed--->
@@ -72,7 +73,7 @@
 
 <br>
 
-    <div class="row no-gutters mb-4 card">      <!--card class removed -->
+    <div class="row no-gutters mb-4 card" id="my-work">      <!--card class removed -->
       <a href="#" class="col-md-6 ">
         <img src="img/gcx-orange.jpg" class="card-img" alt="greycortex">
       </a>
@@ -102,7 +103,7 @@
 
 <br>
 
-    <div class="row no-gutters mb-4 card">      <!--card class removed -->
+    <div class="row no-gutters mb-5 card">      <!--card class removed -->
       <a href="#" class="col-md-6 ">
         <img src="img/nestle-blue.jpg" class="card-img" alt="nestle">
       </a>
@@ -115,8 +116,9 @@
       </div>
     </div>
 
-    <h3 class="pb-4 mt-5 pt-5">More brands I've worked for</h3>
-    <div class="row justify-content-center d-flex brands mb-4">
+<div class="pt-5 pb-2">
+    <h3 class="pb-4">More brands I've worked for</h3>
+    <div class="row justify-content-center d-flex brands">
       <div class="col-sm-2">
         <img src="img/o2.png" alt="o2" class="img-fluid mb-3">
         <p>Mobile app design &&nbspwireframes</p>
@@ -138,140 +140,119 @@
         <p>Landing page design &&nbspanalytics</p>
       </div>
     </div>
+    </div>
 
+    <div class="card-recommend pt-5 mt-5">
+      <h3 class="mt-3 pb-4">Recommendations</h2>
 
-    <div class="row no-gutters">
-      <div class="col-sm-1"></div>
-      <div class="col-sm-10">
-        <h3 class="pb-4 mt-2 pt-5">Recommendations</h2>
-          <p class="">
-            Zuzana worked with GREYCORTEX on our Network Traffic Analysis product: MENDEL. We needed to redesign the user interface as well as improve the user experience. She proposed many changes, which we implemented and the final results were well received by our customers. I recommend her as a GUI/UX specialist and designer who can offer valuable ideas and changes.
-          </p>
-          <p class="quote pb-3">
-            <span class="">
-              Martin Korec   |   Chief Product Officer at <strong>GREYCORTEX</strong>
-            </span>
-          </p>
+      <div class="row no-gutters">
+        <div class="col-md-1"></div>
+        <div class="col-sm-1">
+          <img src="img/recommend1.jpeg" alt="recommendation-photo" class="img-fluid mb-3 rounded-circle">
+        </div>
+        <div class="col-sm-9 mb-3">
+            <p class="">
+              Zuzana worked with GREYCORTEX on our Network Traffic Analysis product: MENDEL. We needed to redesign the user interface as well as improve the user experience. She proposed many changes, which we implemented and the final results were well received by our customers. I recommend her as a GUI/UX specialist and designer who can offer valuable ideas and changes.
+            </p>
+            <p class="quote pb-3">
+              <span class="">
+                Martin Korec   |   Chief Product Officer at <strong>GREYCORTEX</strong>
+              </span>
+            </p>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+
+      <div class="row no-gutters">
+        <div class="col-md-1 padd"></div>
+        <div class="col-sm-1">
+          <img src="img/recommend2.jpeg" alt="recommendation-photo" class="img-fluid mb-3 rounded-circle">
+        </div>
+        <div class="col-sm-9 mb-3">
           <p class="">
             I cooperated with Zuzka on larger and smaller projects, which she always approached complexly and responsibly. If it was necessary to make any changes in wireframes, she always thought about the most feasible solution in detail. At the same time, she communicated well with other team members, which I really appreciate, as this is not always a matter of course.
           </p>
-          <p class="quote">
+          <p class="quote pb-5">
             <span class="">
               Lenka Šlajchrtová   |   Senior Account & Project Manager at <strong>SYMBIO</strong>
             </span>
           </p>
-      </div>
+        </div>
+        <div class="col-md-1 padd"></div>
     </div>
+  </div>
 
-    <div class="row mt-5 mb-4">
-      <div class="col-md-6">
+
+
+    <div class="row mt-5 pt-5 mb-4">
+      <div class="col-md-6 getintouch">
         <h3 class="pb-4 mt-2">Get in Touch</h2>
           <p>Interested in collaboration on an upcoming project?</p>
           <p>E-mail me at z.hrusovs@gmail.com.</p>
           <p>Or find me on LinkedIn, Behance or Dribble.</p>
       </div>
       <div class="col-md-6">
+          <form id="contact-form" name="contact-form" action="mail.php" method="POST">
 
+            <span class="has-float-label md-form mb-4 mt-2">
+                <input class="form-control" id="name" type="text" placeholder="Ex. Bernard Black"/>
+                <label for="name">Your name</label>
+            </span>
 
+            <span class="has-float-label md-form mb-4 mt-5">
+                <input class="form-control" id="mail" type="text" placeholder="Ex. black@bookshop.uk"/>
+                <label for="mail">Contact e-mail</label>
+            </span>
+
+            <span class="has-float-label md-form mb-4 mt-5">
+                <textarea class="form-control" id="messagex" type="text" rows="3" placeholder="Hi..."/></textarea>
+                <label for="messagex">Your message</label>
+            </span>
+
+<!--          <div class="md-form mt-5 mb-4">
+                  <label for="name" class="form-label">Your name</label>
+                  <input type="text" id="name" name="name" class="form-control">
+              </div>
+              <div class="md-form mb-4">
+                  <label for="message" class="form-label">Your message</label>
+                  <textarea type="text" id="message" name="message" rows="3" class="form-control md-textarea"></textarea>
+              </div>-->
+
+          </form>
+
+          <div class="text-center text-md-left mb-5">
+              <a class="btn btn-primary" onclick="validateForm()">Send</a>
+          </div>
+      <div class="status"></div>
       </div>
     </div>
+  </div>
 
+  <div class="container-fluid mt-5">
+    <div class="container">
+      <div class="row">
+      <div class="col-sm-6 foot">
+        <h4>
+          Zuzana Hrušovská
+        </h4>
+        <p>
+          UX Designer
+        </p>
+      </div>
+      <div class="col-sm-6 foot-nav">
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link" href="#my-work">My Work</a>
+          </li>
+            <li class="nav-item">
+            <a class="nav-link no-padd-m" href="#">My Story</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </div>
 
-    <!--Section: Contact v.2-->
-    <section class="mb-4">
-
-        <!--Section heading-->
-        <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
-        <!--Section description-->
-        <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
-            a matter of hours to help you.</p>
-
-        <div class="row">
-
-            <!--Grid column-->
-            <div class="col-md-9 mb-md-0 mb-5">
-                <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-
-                    <!--Grid row-->
-                    <div class="row">
-
-                        <!--Grid column-->
-                        <div class="col-md-6">
-                            <div class="md-form mb-0">
-                                <input type="text" id="name" name="name" class="form-control">
-                                <label for="name" class="">Your name</label>
-                            </div>
-                        </div>
-                        <!--Grid column-->
-
-                        <!--Grid column-->
-                        <div class="col-md-6">
-                            <div class="md-form mb-0">
-                                <input type="text" id="email" name="email" class="form-control">
-                                <label for="email" class="">Your email</label>
-                            </div>
-                        </div>
-                        <!--Grid column-->
-
-                    </div>
-                    <!--Grid row-->
-
-                    <!--Grid row-->
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="md-form mb-0">
-                                <input type="text" id="subject" name="subject" class="form-control">
-                                <label for="subject" class="">Subject</label>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Grid row-->
-
-                    <!--Grid row-->
-                    <div class="row">
-
-                        <!--Grid column-->
-                        <div class="col-md-12">
-
-                            <div class="md-form">
-                                <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                                <label for="message">Your message</label>
-                            </div>
-
-                        </div>
-                    </div>
-                    <!--Grid row-->
-
-                </form>
-
-                <div class="text-center text-md-left">
-<a class="btn btn-primary" onclick="validateForm()">Send</a>                </div>
-                <div class="status"></div>
-            </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
-            <div class="col-md-3 text-center">
-                <ul class="list-unstyled mb-0">
-                    <li><i class="fas fa-map-marker-alt fa-2x"></i>
-                        <p>San Francisco, CA 94126, USA</p>
-                    </li>
-
-                    <li><i class="fas fa-phone mt-4 fa-2x"></i>
-                        <p>+ 01 234 567 89</p>
-                    </li>
-
-                    <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                        <p>contact@mdbootstrap.com</p>
-                    </li>
-                </ul>
-            </div>
-            <!--Grid column-->
-
-        </div>
-
-    </section>
-    <!--Section: Contact v.2-->
 
 <script>
   $(function () {
@@ -280,40 +261,6 @@
     $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
   });
   });
-</script>
-
-<script>
-  function validateForm() {
-  var name =  document.getElementById('name').value;
-  if (name == "") {
-      document.getElementById('status').innerHTML = "Name cannot be empty";
-      return false;
-  }
-  var email =  document.getElementById('email').value;
-  if (email == "") {
-      document.getElementById('status').innerHTML = "Email cannot be empty";
-      return false;
-  } else {
-      var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-      if(!re.test(email)){
-          document.getElementById('status').innerHTML = "Email format invalid";
-          return false;
-      }
-  }
-  var subject =  document.getElementById('subject').value;
-  if (subject == "") {
-      document.getElementById('status').innerHTML = "Subject cannot be empty";
-      return false;
-  }
-  var message =  document.getElementById('message').value;
-  if (message == "") {
-      document.getElementById('status').innerHTML = "Message cannot be empty";
-      return false;
-  }
-  document.getElementById('status').innerHTML = "Sending...";
-  document.getElementById('contact-form').submit();
-
-  }
 </script>
 
 </body>

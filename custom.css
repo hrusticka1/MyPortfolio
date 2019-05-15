@@ -63,7 +63,15 @@ h3 {
     font-weight: 500;
     font-size: 1.4rem;
     text-align: center;
+    margin-bottom: 30px;
       }
+
+h4 {
+          font-family: 'Montserrat', sans-serif !important;
+          font-weight: 500;
+          font-size: 1.1rem;
+          margin-bottom: 10px;
+            }
 
 a {
     color: black;
@@ -177,17 +185,17 @@ a {
     border: none;
     border-radius: .25rem;
   /*  box-shadow: 0 0rem 0.7rem rgba(0,0,0,.10);    */
-    -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.10);
-    -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.10);
-    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.10);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.10);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.10);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.10);
     transition: box-shadow 0.3s ease-in-out;
-
 }
+
 .card:hover {
   /*    box-shadow: 0 0rem 2.6rem rgba(0,0,0,.18);   */
-    -webkit-box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.12);
-    -moz-box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.12);
-    box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.12);
+    -webkit-box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.13);
+    -moz-box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.13);
+    box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.13);
     top: -5;
 }
 
@@ -211,6 +219,24 @@ a {
     border-top-left-radius: calc(0.25rem - 1px);
     }
   }
+
+.card-recommend {
+      flex-direction: row;
+      min-width: 0;
+      word-wrap: break-word;
+      background-color: #fff;
+      border: none;
+      border-radius: .25rem;
+    /*  box-shadow: 0 0rem 0.7rem rgba(0,0,0,.10);    */
+      -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.10);
+      -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.10);
+      box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.10);
+      transition: box-shadow 0.3s ease-in-out;
+  }
+
+.card-recommend img {
+  width: 70%;
+}
 
 .btn {
   font-weight: 300;
@@ -239,6 +265,7 @@ a {
 
 .brands .col-sm-2 {
   width: 40%;
+  margin-bottom: 32px;
 }
   @media (min-width: 576px) {
      .brands .col-sm-2 {
@@ -254,3 +281,140 @@ a {
       flex: 0 0 16%;
     }
   }
+
+  .getintouch {
+    text-align: center;
+  }
+
+.form-control {
+  border-radius: 0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+
+}
+
+.btn:focus,.btn:active {
+   outline: none !important;
+   box-shadow: none;
+}
+
+.form-control:focus, .form-control:active {
+   outline: none !important;
+   box-shadow: none;
+}
+
+.has-float-label {
+  display: block;
+  position: relative;
+  color: black;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif !important;
+
+}
+.has-float-label label, .has-float-label > span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: text;
+  font-size: 85%;
+  opacity: 1;
+  -webkit-transition: all .3s;
+          transition: all .3s;
+  top: -1em;
+  left: 0.75rem;
+  z-index: 3;
+  line-height: 1;
+  padding: 0 1px;
+}
+.has-float-label label::after, .has-float-label > span::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  background: white;
+  height: 2px;
+  top: 50%;
+  left: -.1em;
+  right: -.2em;
+  z-index: -1;
+}
+.has-float-label .form-control::-webkit-input-placeholder {
+  opacity: 0.5;
+  -webkit-transition: all .3s;
+          transition: all .3s;
+  font-family: 'Roboto', sans-serif !important;
+  font-weight: 300;
+
+}
+.has-float-label .form-control::-moz-placeholder {
+  opacity: 0.5;
+  transition: all .3s;
+  font-family: 'Roboto', sans-serif !important;
+  font-weight: 300;
+}
+.has-float-label .form-control:-ms-input-placeholder {
+  opacity: 0.5;
+  transition: all .3s;
+  font-family: 'Roboto', sans-serif !important;
+  font-weight: 300;
+}
+.has-float-label .form-control::placeholder {
+  opacity: 0.5;
+  -webkit-transition: all .3s;
+          transition: all .3s;
+  font-family: 'Roboto', sans-serif !important;
+  font-weight: 300;
+
+}
+.has-float-label .form-control:placeholder-shown:not(:focus)::-webkit-input-placeholder {
+  opacity: 0;
+}
+.has-float-label .form-control:placeholder-shown:not(:focus)::-moz-placeholder {
+  opacity: 0;
+}
+.has-float-label .form-control:placeholder-shown:not(:focus):-ms-input-placeholder {
+  opacity: 0;
+}
+.has-float-label .form-control:placeholder-shown:not(:focus)::placeholder {
+  opacity: 0;
+}
+.has-float-label .form-control:placeholder-shown:not(:focus) + * {
+  font-size: 130%;
+  opacity: 1;
+  top: .3em;
+}
+
+.card-recommend .col-sm-9 {
+  width: 75%!important;
+}
+.card-recommend .col-sm-1 {
+  width: 15%!important;
+}
+.card-recommend .col-md-1 {
+  width: 5%!important;
+}
+
+.container-fluid {
+  background-color: black;
+  color: white;
+}
+
+.foot {
+  padding: 25px 0 10px 0;
+}
+
+.container-fluid a {
+  color: white;
+  font-size: 1rem;
+}
+
+.container-fluid a:hover {
+  color: #d3d3d3;
+}
+
+.foot-nav {
+    display: flex!important;
+    justify-content: flex-end!important;
+    align-self: center!important;
+
+}
