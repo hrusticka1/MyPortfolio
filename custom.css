@@ -435,13 +435,32 @@ html {
 }
 
 .case-study-img {
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
   height: 100%;
   max-height: 360px;
+  max-width: 400px;
   object-fit: cover;
+  object-position: left;
+  margin-top:20px;
 }
+@media (min-width: 768px) {
+  .case-study-img {
+    margin-top: 0px;
+  }
+}
+
+.case-study-img-top {
+  max-width: 100%;
+  object-fit: cover;
+  justify-content: center;
+  display: flex;
+  padding-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .case-study-img-top {
+    height: 100%;
+    max-height: 360px;
+    padding-bottom: 0px;
+  }}
 
 .case-subtitle {
   font-size: 18px;
@@ -449,4 +468,8 @@ html {
 
 .align-left h2 {
   text-align: left;
+}
+
+.col-md-6 {
+  padding: 0 15px 0 15px;
 }
