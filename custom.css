@@ -435,16 +435,20 @@ html {
 }
 
 .case-study-img {
-  height: 100%;
-  max-height: 360px;
-  max-width: 400px;
+  width: 100%;
   object-fit: cover;
   object-position: left;
   margin-top:20px;
+  border: none;
+  border-radius: .25rem;
 }
 @media (min-width: 768px) {
   .case-study-img {
     margin-top: 0px;
+    height: 100%;
+    width: auto;
+    max-height: 360px;
+    max-width: 400px;
   }
 }
 
@@ -453,13 +457,15 @@ html {
   object-fit: cover;
   justify-content: center;
   display: flex;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border: none;
+  border-radius: .25rem;
 }
 @media (min-width: 768px) {
   .case-study-img-top {
     height: 100%;
     max-height: 360px;
-    padding-bottom: 0px;
+    margin-bottom: 0px;
   }}
 
 .case-subtitle {
@@ -472,4 +478,20 @@ html {
 
 .col-md-6 {
   padding: 0 15px 0 15px;
+}
+
+.career-position {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+.career-duration {
+  font-size: 0.8rem;
+  opacity: 0.8;
+  margin-bottom: 0.6rem;
+}
+
+ul {
+  list-style-type: square;
 }
