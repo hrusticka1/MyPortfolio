@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg data-bbox="1.199 0 57.389 59.06" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" height="60" width="60" data-type="shape">
+    <g fill-rule="evenodd">
+        <path d="M13.825 0v12.993H1.199V0h12.626z"/>
+        <path d="M45.962 0h12.626v12.993l-12.626 10.63V0z"/>
+        <path d="M28.746 23.624h17.216l-14.92 11.812H13.824l14.92-11.812z"/>
+        <path d="M1.199 46.067l12.626-10.631V59.06H1.199V46.067z"/>
+        <path d="M58.588 46.067V59.06H45.962V46.067h12.626z"/>
+    </g>
+</svg>

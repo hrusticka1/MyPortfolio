@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="custom.css">
+</head>
+<body>
+
+
+<nav class="navbar pl-0 pr-0 flex-md-row fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="../MyPortfolio/index.html">
+        <svg data-bbox="1.199 0 57.389 59.06" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" height="30" width="30" data-type="shape">
+            <g fill-rule="evenodd">
+                <path d="M13.825 0v12.993H1.199V0h12.626z"/>
+                <path d="M45.962 0h12.626v12.993l-12.626 10.63V0z"/>
+                <path d="M28.746 23.624h17.216l-14.92 11.812H13.824l14.92-11.812z"/>
+                <path d="M1.199 46.067l12.626-10.631V59.06H1.199V46.067z"/>
+                <path d="M58.588 46.067V59.06H45.962V46.067h12.626z"/>
+            </g>
+        </svg>
+      </a>
+
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#my-work">My Work</a>
+          </li>
+            <li class="nav-item">
+            <a class="nav-link no-padd-m" href="../MyPortfolio/about.html">About me</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn ml-3" href="#get-in-touch">
+              <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 485.411 485.411" style="enable-background:new 0 0 485.411 485.411;" xml:space="preserve">
+              <g>
+                <path style="fill:#010002;" d="M0,81.824v321.763h485.411V81.824H0z M242.708,280.526L43.612,105.691h398.187L242.708,280.526z
+                   M163.397,242.649L23.867,365.178V120.119L163.397,242.649z M181.482,258.533l61.22,53.762l61.22-53.762L441.924,379.72H43.487
+                  L181.482,258.533z M322.008,242.655l139.535-122.536v245.059L322.008,242.655z"/>
+              </g>
+                <span class="nav-cta-text">Get in Touch</span>
+              </a>
+          </li>
+        </ul>
+    </div>
+</nav>
+<br>
+
+<div class="container">
+    <div class="row intro">
+        <div class="col-sm-10">
+            <h1 class="pb-3 align-left">  <!--- display-4 removed--->
+              About me
+            </h1>
+            <p>
+              Hi! I'm Zuzana, and for the last 3,5 years, I'm a <strong>UX designer</strong>.
+              </p>
+              <p>
+                My job is to create <strong>user-centred digital experiences</strong> and help my clients achieve their <strong>business goals</strong>.
+                I will help you develop your product from research, through design, development and ongoing improvement.
+            </p>
+            <p>
+              I can help you with
+              <ul>
+                <li class="pb-2">user research and testing</li>
+                <li class="pb-2">sketching, wireframing and prototyping</li>
+                <li class="pb-2">visual design</li>
+                <li class="pb-2">information architecture</li>
+                <li class="pb-2">Google analytics</li>
+                <li>and more :-)</li>
+              </ul>
+            </p>
+            <p>
+              Apart from design, you can always talk to me about (solo) travelling, great food, craft beer, coffee, summer festivals and movies.
+            </p>
+            <p>
+              Currently Prague based, but open to positions all around the world.
+            </p>
+
+            <p class="d-inline">
+                Still curious?
+                <a href="https://www.linkedin.com/in/zhrusovska/" class="nav-cta-text d-inline" target="_blank">
+                    Download my CV</a>
+                or check out my
+                <a href="https://www.linkedin.com/in/zhrusovska/" class="nav-cta-text d-inline" target="_blank">
+                    LinkedIn</a>,
+                <a class="d-inline" href="https://www.behance.net/zhrusovska/" class="nav-cta-text" target="_blank">
+                    Behance</a> or
+                <a class="d-inline" href="https://dribbble.com/zuzanah/" class="nav-cta-text" target="_blank">
+                    Dribble</a>.
+            </p>
+        </div>
+    </div>
+
+  <a id='get-in-touch'></a>
+
+    <div class="row mt-5 mb-4">
+      <div class="col-md-6 mb-5 getintouch">
+        <h2 class="pb-4 mt-2">Get in Touch</h2>
+          <p>Interested in collaboration on an upcoming project?</p>
+          <p>E-mail me at
+            <a href="mailto:z.hrusovs%40gmail.com">
+              z.hrusovs&#064;gmail.com</a></p>
+          <p class="d-inline">or find me on
+            <a class="d-inline" href="https://www.linkedin.com/in/zhrusovska/" class="nav-cta-text" target="_blank">
+                LinkedIn</a>.
+          </p>
+      </div>
+      <div class="col-md-6">
+          <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+            <span class="has-float-label md-form mb-4 mt-2">
+                <input class="form-control" id="name" type="text" placeholder="Ex. Bernard Black"/>
+                <label for="name">Your name</label>
+            </span>
+
+            <span class="has-float-label md-form mb-4 mt-5">
+                <input class="form-control" id="mail" type="text" placeholder="Ex. black@bookshop.uk"/>
+                <label for="mail">Contact e-mail</label>
+            </span>
+
+            <span class="has-float-label md-form mb-4 mt-5">
+                <textarea class="form-control" id="messagex" type="text" rows="3" placeholder="Hi..."/></textarea>
+                <label for="messagex">Your message</label>
+            </span>
+
+<!--          <div class="md-form mt-5 mb-4">
+                  <label for="name" class="form-label">Your name</label>
+                  <input type="text" id="name" name="name" class="form-control">
+              </div>
+              <div class="md-form mb-4">
+                  <label for="message" class="form-label">Your message</label>
+                  <textarea type="text" id="message" name="message" rows="3" class="form-control md-textarea"></textarea>
+              </div>-->
+
+          </form>
+
+          <div class="text-center text-md-left mb-5">
+              <a class="btn btn-primary" onclick="validateForm()">Send</a>
+          </div>
+      <div class="status"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid mt-5">
+    <div class="container">
+      <div class="row">
+      <div class="col-sm-6 foot">
+        <h4>
+          Zuzana Hrušovská
+        </h4>
+        <p>
+          UX Designer
+        </p>
+      </div>
+      <div class="col-sm-6 foot-nav">
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link" href="#my-work">My Work</a>
+          </li>
+            <li class="nav-item">
+            <a class="nav-link no-padd-m" href="../MyPortfolio/about.html">About me</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </div>
+
+
+<script>
+  $(function () {
+  $(document).scroll(function () {
+    var $nav = $(".navbar");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+  });
+  });
+</script>
+
+</body>
+</html>
